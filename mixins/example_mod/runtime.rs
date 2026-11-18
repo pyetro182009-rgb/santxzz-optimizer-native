@@ -1,4 +1,4 @@
-// Santxzz Optimizer - Core runtime module
+// Santxzz Optimizer - Core runtime
 
 pub fn block_break_message(pos: [i32; 3]) -> String {
     format!(
