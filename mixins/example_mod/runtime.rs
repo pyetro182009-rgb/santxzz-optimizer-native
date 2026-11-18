@@ -1,9 +1,8 @@
-// Put testable mod logic here. This file is both the standalone Cargo library
-// and the injected `crate::game::example_mod` module; no generated copy exists.
+// Santxzz Optimizer - Core runtime module
 
 pub fn block_break_message(pos: [i32; 3]) -> String {
     format!(
-        "[example_mod] Breaking block at {}, {}, {}",
+        "[Santxzz Optimizer] Block position: {}, {}, {}",
         pos[0], pos[1], pos[2]
     )
 }
@@ -20,7 +19,7 @@ mod tests {
     fn message_preserves_signed_block_coordinates() {
         assert_eq!(
             block_break_message([-3, 64, 12]),
-            "[example_mod] Breaking block at -3, 64, 12"
+            "[Santxzz Optimizer] Block position: -3, 64, 12"
         );
     }
 }
